@@ -6,6 +6,7 @@ import 'package:hhh/Data/ListScreen.dart';
 
 import 'Poem/PoemList.dart';
 import 'Weather.dart';
+import 'dra.dart';
 
 class MyWidget extends StatelessWidget {
   const MyWidget({Key? key}) : super(key: key);
@@ -100,7 +101,7 @@ class MyWidget extends StatelessWidget {
                             GestureDetector(
                               onTap: () {
                                 Navigator.push(context,
-                                    MaterialPageRoute(builder: (context) => MyList()));
+                                    MaterialPageRoute(builder: (context) => DrawingBoard()));
                               },
                               child: Card(
                                 color: Colors.deepOrange,
